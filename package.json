@@ -1,0 +1,26 @@
+{
+  "name": "@alex-e-leon/eslint-config",
+  "version": "1.0.0",
+  "description": "personalised eslint configs",
+  "repository": "alex-e-leon/eslint-config",
+  "author": "alex leon <alex@leon.st>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-css-modules": "^2.11.0",
+    "eslint-plugin-flowtype": "^3.13.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "eslint-plugin-unicorn": "^14.0.1"
+  },
+  "peerDependencies": {
+    "eslint": "^5.13.0",
+    "prettier": "^1.17.0"
+  }
+}
