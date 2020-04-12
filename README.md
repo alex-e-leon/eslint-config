@@ -1,6 +1,6 @@
 # eslint-config
 
-Personalised eslint-configs for:
+Personalised eslint-configs + prettier config for:
 
 - react projects with flow + css modules
 - node.js projects with flow
@@ -20,3 +20,10 @@ Personalised eslint-configs for:
   "extends": "@alex-e-leon/eslint-config/node",
 }
 ```
+
+package.json
+```js
+  "prettier": "@alex-e-leon/eslint-config/prettier.json"
+```
+
+Note that you must install prettier, eslint + flow seperately.
