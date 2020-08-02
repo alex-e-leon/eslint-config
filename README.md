@@ -4,6 +4,7 @@ Personalised eslint-configs + prettier config for:
 
 - react projects with flow + css modules
 - node.js projects with flow
+- node.js projects with typescript 
 
 
 ## Usage
@@ -17,7 +18,11 @@ Personalised eslint-configs + prettier config for:
 }
 \\ or
 {
-  "extends": "@alex-e-leon/eslint-config/node",
+  "extends": "@alex-e-leon/eslint-config/node-flow",
+}
+\\ or
+{
+  "extends": "@alex-e-leon/eslint-config/node-ts",
 }
 ```
 
