@@ -6,9 +6,11 @@
   "author": "alex leon <alex@leon.st>",
   "license": "ISC",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-css-modules": "^2.11.0",
     "eslint-plugin-flowtype": "^3.13.0",
@@ -20,7 +22,7 @@
     "eslint-plugin-unicorn": "^14.0.1"
   },
   "peerDependencies": {
-    "eslint": "^5.13.0",
-    "prettier": "^1.17.0"
+    "eslint": "^7.6.0",
+    "prettier": "^2.0.5"
   }
 }
