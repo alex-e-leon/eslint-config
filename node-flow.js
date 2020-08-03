@@ -30,5 +30,6 @@ module.exports = {
     "unicorn/filename-case": ["error", { "case": "camelCase" }],
     "unicorn/prevent-abbreviations": "off",
     "unicorn/no-nested-ternary": "off"
+    "unicorn/no-fn-reference-in-iterator": "off",
   }
 }
