@@ -28,4 +28,5 @@ package.json
   "prettier": "@alex-e-leon/eslint-config/prettier.json"
 ```
 
-Note that you must install prettier, eslint + flow seperately.
+Note that you must install prettier and eslint seperately
+and either typescript/flow depending on which lint ruleset you choose.
