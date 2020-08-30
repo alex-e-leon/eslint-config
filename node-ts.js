@@ -5,27 +5,11 @@ module.exports = {
     "jest": true,
     "es2020": true
   },
-  "parserOptions": {
-    "project": './tsconfig.json',
-  },
   "extends": [
     'airbnb-typescript/base',
     "plugin:prettier/recommended",
-    "plugin:unicorn/recommended"
-  ],
-  "rules": {
-    "import/extensions": ["error", "always", {
-      "js": "never",
-      "jsx": "never",
-      "ts": "never",
-      "tsx": "never"
-    }],
-    "no-console": "off",
-    "unicorn/explicit-length-check": "off",
-    "unicorn/filename-case": ["error", { "case": "camelCase" }],
-    "unicorn/prevent-abbreviations": "off",
-    "unicorn/prefer-number-properties": "off",
-    "unicorn/no-fn-reference-in-iterator": "off",
-    "unicorn/no-nested-ternary": "off"
-  }
-};
+    "./lint-rulesets/ts.js",
+    "./lint-rulesets/node.js",
+    "./lint-rulesets/unicorn.js"
+  ]
+}
