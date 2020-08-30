@@ -15,6 +15,7 @@ module.exports = {
     "react/destructuring-assignment": "off",
     "react/display-name": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+    "react/require-default-props": ["error", { "ignoreFunctionalComponents": true }],
     "react/sort-comp": "off"
   }
 }
