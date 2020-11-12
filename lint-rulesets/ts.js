@@ -8,7 +8,8 @@ module.exports = {
       "jsx": "never",
       "ts": "never",
       "tsx": "never"
-    }]
+    }],
+    "import/no-duplicates": "off"
   },
   "settings": {
     "import/parsers": {
