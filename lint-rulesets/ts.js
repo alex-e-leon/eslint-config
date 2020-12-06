@@ -9,7 +9,8 @@ module.exports = {
       "ts": "never",
       "tsx": "never"
     }],
-    "import/no-duplicates": "off"
+    "import/no-duplicates": "off",
+    "@typescript-eslint/array-type": ["error", {"default": "array-simple"}]
   },
   "settings": {
     "import/parsers": {
