@@ -1,6 +1,6 @@
 {
   "name": "@alex-e-leon/eslint-config",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "personalised eslint configs",
   "repository": "alex-e-leon/eslint-config",
   "author": "alex leon <alex@leon.st>",
