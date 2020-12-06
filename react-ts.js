@@ -8,6 +8,7 @@ module.exports = {
   "extends": [
     'airbnb-typescript',
     "plugin:prettier/recommended",
+    'prettier/@typescript-eslint',
     "./lint-rulesets/ts.js",
     "./lint-rulesets/react.js",
     "./lint-rulesets/css-modules.js",
