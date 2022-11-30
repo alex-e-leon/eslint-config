@@ -18,6 +18,6 @@ module.exports = {
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/no-nested-ternary": "off",
     "unicorn/no-null": "off",
-    "unicorn/no-reduce": "off"
+    "unicorn/no-array-reduce": "off"
   }
 }
