@@ -6,8 +6,10 @@ module.exports = {
     "plugin:unicorn/recommended"
   ],
   "rules": {
+    "unicorn/consistent-destructuring": "off",
     "unicorn/explicit-length-check": "off",
     "unicorn/filename-case": ["error", {"cases": {"camelCase": true, "pascalCase": true}}],
+    "unicorn/import-style": "off",
     "unicorn/prevent-abbreviations": "off",
     "unicorn/prefer-number-properties": "off",
     "unicorn/prefer-spread": "off",
