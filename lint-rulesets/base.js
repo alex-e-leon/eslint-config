@@ -6,5 +6,9 @@ module.exports = {
   "plugins": [
     "import",
     "prettier"
-  ]
+  ],
+  "rules": {
+    "import/no-named-as-default-member": "off",
+    "import/export": "off"
+  }
 }
