@@ -7,7 +7,7 @@ module.exports = {
   },
   "extends": [
     "airbnb-base",
-    "plugin:prettier/recommended",
+    "./lint-rulesets/base.js",
     "./lint-rulesets/node.js",
     "./lint-rulesets/flow.js",
     "./lint-rulesets/unicorn.js"

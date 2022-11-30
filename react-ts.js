@@ -7,7 +7,7 @@ module.exports = {
   },
   "extends": [
     'airbnb-typescript',
-    "plugin:prettier/recommended",
+    "./lint-rulesets/base.js",
     "./lint-rulesets/ts.js",
     "./lint-rulesets/react.js",
     "./lint-rulesets/css-modules.js",
