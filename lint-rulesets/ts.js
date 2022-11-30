@@ -10,7 +10,8 @@ module.exports = {
       "tsx": "never"
     }],
     "import/no-duplicates": "off",
-    "@typescript-eslint/array-type": ["error", {"default": "array-simple"}]
+    "@typescript-eslint/array-type": ["error", {"default": "array-simple"}],
+    "@typescript-eslint/object-curly-spacing": ["error", "never"],
   },
   "settings": {
     "import/parsers": {

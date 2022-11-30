@@ -4,8 +4,17 @@ module.exports = {
   ],
   "plugins": [
     "react",
+    "jsx-a11y",
     "react-hooks"
   ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React", 
+      "fragment": "Fragment",
+      "version": "detect"
+    }
+  },
   "rules": {
     "no-underscore-dangle": "off",
     "react-hooks/exhaustive-deps": "warn",

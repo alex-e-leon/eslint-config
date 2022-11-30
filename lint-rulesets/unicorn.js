@@ -1,4 +1,7 @@
 module.exports = {
+  "plugins": [
+    "unicorn"
+  ],
   "extends": [
     "plugin:unicorn/recommended"
   ],
@@ -8,6 +11,9 @@ module.exports = {
     "unicorn/prevent-abbreviations": "off",
     "unicorn/prefer-number-properties": "off",
     "unicorn/prefer-spread": "off",
+    "unicorn/prefer-switch": "off",
+    "unicorn/prefer-module": "off",
+    "unicorn/prefer-node-protocol": "off",
     "unicorn/new-for-builtins": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/no-nested-ternary": "off",
