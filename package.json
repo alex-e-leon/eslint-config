@@ -9,7 +9,7 @@
     "test": "eslint -c node-flow.js && eslint -c node-ts.js && eslint -c react-flow.js && eslint -c react-ts.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^5.45.0",
     "babel-eslint": "^10.0.1",
     "eslint-config-airbnb": "^19.0.4",
