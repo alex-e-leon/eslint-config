@@ -24,13 +24,13 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-unicorn": "^38.0.1"
+    "eslint-plugin-unicorn": "^48.0.1"
   },
   "peerDependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.38.0",
     "prettier": "^3.0.3"
   },
   "devDependencies": {
-    "eslint": "^8.28.0"
+    "eslint": "^8.38.0"
   }
 }
