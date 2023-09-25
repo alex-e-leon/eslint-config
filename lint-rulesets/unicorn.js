@@ -17,9 +17,11 @@ module.exports = {
     "unicorn/prefer-module": "off",
     "unicorn/prefer-node-protocol": "off",
     "unicorn/new-for-builtins": "off",
+    "unicorn/no-await-expression-member": "off",
     "unicorn/no-fn-reference-in-iterator": "off",
     "unicorn/no-nested-ternary": "off",
     "unicorn/no-null": "off",
-    "unicorn/no-array-reduce": "off"
+    "unicorn/no-array-reduce": "off",
+    "unicorn/no-useless-switch-case": "off"
   }
 }
