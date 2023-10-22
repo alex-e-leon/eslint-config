@@ -12,6 +12,7 @@ module.exports = {
     "import/no-duplicates": "off",
     "@typescript-eslint/array-type": ["error", {"default": "array-simple"}],
     "@typescript-eslint/object-curly-spacing": ["error", "never"],
+    "@typescript-eslint/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
   },
   "settings": {
     "import/parsers": {
