@@ -6,6 +6,8 @@ module.exports = {
     "es2020": true
   },
   "extends": [
+    'airbnb',
+    'airbnb/hooks',
     'airbnb-typescript',
     "./lint-rulesets/base.js",
     "./lint-rulesets/ts.js",

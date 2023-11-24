@@ -7,6 +7,7 @@ module.exports = {
   },
   "extends": [
     "airbnb",
+    "airbnb/hooks",
     "./lint-rulesets/base.js",
     "./lint-rulesets/react.js",
     "./lint-rulesets/css-modules.js",
