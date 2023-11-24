@@ -28,5 +28,8 @@ module.exports = {
         "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
       }
     ]
-  }
+  },
+  "max-classes-per-file": "off",
+  "consistent-return": "off",
+  "no-param-reassign": "off",
 }
