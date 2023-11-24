@@ -27,9 +27,9 @@ module.exports = {
         "selector": "WithStatement",
         "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
       }
-    ]
-  },
-  "max-classes-per-file": "off",
-  "consistent-return": "off",
-  "no-param-reassign": "off",
+    ],
+    "max-classes-per-file": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off",
+  }
 }
