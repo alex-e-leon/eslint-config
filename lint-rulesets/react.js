@@ -24,6 +24,7 @@ module.exports = {
     "react/display-name": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "react/require-default-props": ["error", { "ignoreFunctionalComponents": true }],
-    "react/sort-comp": "off"
+    "react/sort-comp": "off",
+    "react/no-unstable-nested-components": "off"
   }
 }
