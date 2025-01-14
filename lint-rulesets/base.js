@@ -25,5 +25,21 @@ export default [
           "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
         }
       ],
+
+      // from airbnb
+      'no-shadow': 'error',
+      'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
+
+
+      'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+      'camelcase': ['error', { properties: 'never', ignoreDestructuring: false }],
+      '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
+      'implicit-arrow-linebreak': ['error', 'beside'],
+      'no-tabs': 'error',
+      '@stylistic/nonblock-statement-body-position': ['error', 'beside', { overrides: {} }],
+      '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
+      '@stylistic/padded-blocks': ['error', 'never', { allowSingleLineBlocks: false }],
+      '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
+      'strict': ['error', 'never']
     }
   }]
