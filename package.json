@@ -7,7 +7,7 @@
   "license": "ISC",
   "type": "module",
   "scripts": {
-    "test": "eslint -c node-ts.js && eslint -c react-ts.js"
+    "test": "eslint -c node-ts.js prettier.json && eslint -c react-ts.js prettier.json"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.2.0",

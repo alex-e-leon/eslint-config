@@ -1,4 +1,7 @@
+import cssModulesPlugin from 'eslint-plugin-css-modules';
 import { FlatCompat } from "@eslint/eslintrc";
+import { fileURLToPath } from "url";
+import path from "path";
 
 // Required to load old extend formats
 // see https://eslint.org/docs/latest/use/configure/migration-guide
@@ -10,7 +13,7 @@ export default [
   ...compat.extends("plugin:css-modules/recommended"),
   {
     name: 'alex-eslint-css-modules',
-    plugins: [
-      "css-modules"
-    ]
+    plugins: {
+      "css-modules": cssModulesPlugin
+    }
   }]
