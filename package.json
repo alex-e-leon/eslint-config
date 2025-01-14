@@ -7,7 +7,7 @@
   "license": "ISC",
   "type": "module",
   "scripts": {
-    "test": "eslint -c node-ts.js prettier.json && eslint -c react-ts.js prettier.json"
+    "test": "eslint -c node-ts.js test/test.ts && eslint -c react-ts.js"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -21,7 +21,8 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-unicorn": "^56.0.1",
-    "globals": "^15.14.0"
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.20.0"
   },
   "peerDependencies": {
     "eslint": "^9.18.0",

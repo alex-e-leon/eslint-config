@@ -16,9 +16,6 @@ export default [
   jsxA11yPlugin.flatConfigs.recommended,
   {
     name: 'alex-eslint-react',
-    plugins: {
-      'jsx-a11y': jsxA11yPlugin,
-    },
     settings: {
       "react": {
         "version": "detect"

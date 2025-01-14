@@ -1,13 +1,8 @@
-import importPlugin from 'eslint-plugin-import';
-
 // inspired by airbnb + xo. Would love to just extend of import plugin recommended,
 // but the recommended really doesnt add much
 export default [
   {
     name: 'alex-eslint-import',
-    plugins: {
-      'import': importPlugin,
-    },
     rules: {
       'import/default': 'error',
       'import/export': 'error',

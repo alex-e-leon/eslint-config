@@ -1,26 +1,12 @@
 import xoTypeScript from 'eslint-config-xo-typescript';
+import tseslint from 'typescript-eslint';
+import importPlugin from 'eslint-plugin-import';
 
-export default [
+export default tseslint.config(
   ...xoTypeScript,
   {
     name: 'alex-eslint-typescript',
-    rules: {
-      "import/extensions": ["error", "always", {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
-      }],
-      "import/no-duplicates": "off",
-    },
-    settings: {
-      "import/parsers": {
-        "@typescript-eslint/parser": [".ts", ".tsx"]
-      },
-      "import/resolver": {
-        "typescript": {
-          "alwaysTryTypes": true
-        }
-      }
-    }
-  }]
+    files: ['**/*.{ts,tsx}'],
+    extends: [importPlugin.flatConfigs.typescript],
+  })
+
