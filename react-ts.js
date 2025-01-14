@@ -4,6 +4,7 @@ import react from './lint-rulesets/react.js';
 import importRules from './lint-rulesets/import.js';
 import cssModules from './lint-rulesets/css-modules.js';
 import unicorn from './lint-rulesets/unicorn.js';
+import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
   ...base,
@@ -12,4 +13,5 @@ export default [
   ...react,
   ...cssModules,
   ...unicorn,
+  prettierPluginRecommended,
 ]
