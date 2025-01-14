@@ -84,6 +84,7 @@ export default [
         exceptions: [],
       }],
       'react/prefer-exact-props': 'error',
+      'no-console': 'warn',
     }
   },
 ]

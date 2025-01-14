@@ -29,8 +29,6 @@ export default [
       // from airbnb
       'no-shadow': 'error',
       'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
-
-
       'brace-style': ['error', '1tbs', { allowSingleLine: true }],
       'camelcase': ['error', { properties: 'never', ignoreDestructuring: false }],
       '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
@@ -40,6 +38,45 @@ export default [
       '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: true }],
       '@stylistic/padded-blocks': ['error', 'never', { allowSingleLineBlocks: false }],
       '@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
-      'strict': ['error', 'never']
+      'strict': ['error', 'never'],
+      'no-confusing-arrow': ['error', { allowParens: true, }],
+      'no-restricted-exports': ['error', {
+        restrictedNamedExports: [
+          'default', // use `export default` to provide a default export
+          'then', // this will cause tons of confusion when your module is dynamically `import()`ed, and will break in most node ESM versions
+        ],
+      }],
+      'prefer-arrow-callback': 'error',
+      'prefer-const': ['error', { destructuring: 'all', ignoreReadBeforeAssign: true },],
+      'prefer-template': 'error',
+      'class-methods-use-this': ['error', { exceptMethods: [] }],
+      'consistent-return': 'error',
+      'curly': ['error', 'multi-line'], // multiline
+      'default-param-last': 'error',
+      'no-empty-function': ['error', {
+        allow: [
+          'arrowFunctions',
+          'functions',
+          'methods',
+        ]
+      }],
+      'no-loop-func': 'error',
+      'no-param-reassign': ['error', {
+        props: true,
+        ignorePropertyModificationsFor: [
+          'acc', // for reduce accumulators
+          'accumulator', // for reduce accumulators
+          'e', // for e.returnvalue
+          'ctx', // for Koa routing
+          'context', // for Koa routing
+          'req', // for Express requests
+          'request', // for Express requests
+          'res', // for Express responses
+          'response', // for Express responses
+          '$scope', // for Angular 1 scopes
+          'staticContext', // for ReactRouter context
+        ]
+      }],
+      'vars-on-top': 'error',
     }
   }]
