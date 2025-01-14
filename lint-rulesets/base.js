@@ -1,12 +1,7 @@
-import importPlugin from "eslint-plugin-import";
-
 export default [
-  importPlugin.flatConfigs.recommended,
   {
     name: "alex-eslint-base",
     rules: {
-      "import/no-named-as-default-member": "off",
-
       // From airbnb
       "no-shadow": "error",
       "no-use-before-define": [

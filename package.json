@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint -c node-ts.js",
-    "lint:fix": "eslint -c node-ts.js --fix ./lint-rulesets",
+    "lint:fix": "eslint -c node-ts.js --fix",
     "test": "eslint -c node-ts.js test/test.ts && eslint -c react-ts.js"
   },
   "dependencies": {

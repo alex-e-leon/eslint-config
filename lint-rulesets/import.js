@@ -1,8 +1,26 @@
+import importPlugin from "eslint-plugin-import";
+import { allExtensions } from "./util.js";
+
 // Inspired by airbnb + xo. Would love to just extend of import plugin recommended,
 // but the recommended really doesnt add much
 export default [
   {
     name: "alex-eslint-import",
+    plugins: {
+      import: importPlugin,
+    },
+    languageOptions: {
+      ecmaVersion: 2018,
+      sourceType: "module",
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    settings: {
+      "import/extensions": allExtensions.map((ext) => `.${ext}`),
+    },
     rules: {
       "import/default": "error",
       "import/export": "error",

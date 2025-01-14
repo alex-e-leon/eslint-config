@@ -1,20 +1,10 @@
-import { fileURLToPath } from "url";
-import path from "path";
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
-import xoSpaceBrowser from "eslint-config-xo/space/browser";
-import { FlatCompat } from "@eslint/eslintrc";
-
-// Required to load old extend formats
-// see https://eslint.org/docs/latest/use/configure/migration-guide
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({ baseDirectory: __dirname });
+import { allExtensions } from "./util.js";
 
 export default [
-  ...xoSpaceBrowser,
-  ...compat.extends("xo-react/space"),
-  jsxA11yPlugin.flatConfigs.recommended,
   {
+    ...jsxA11yPlugin.flatConfigs.recommended,
+    files: [`**/*.{${allExtensions.join(",")}}`],
     name: "alex-eslint-react",
     settings: {
       react: {
