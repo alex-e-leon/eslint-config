@@ -1,18 +1,13 @@
-module.exports = {
-  "root": true,
-  "env": {
-    "browser": true,
-    "jest": true,
-    "es2020": true
-  },
-  "extends": [
-    'airbnb',
-    'airbnb/hooks',
-    'airbnb-typescript',
-    "./lint-rulesets/base.js",
-    "./lint-rulesets/ts.js",
-    "./lint-rulesets/react.js",
-    "./lint-rulesets/css-modules.js",
-    "./lint-rulesets/unicorn.js"
-  ]
-}
+import base from './lint-rulesets/base.js';
+import ts from './lint-rulesets/ts.js';
+import react from './lint-rulesets/react.js';
+import cssModules from './lint-rulesets/css-modules.js';
+import unicorn from './lint-rulesets/unicorn.js';
+
+export default [
+  ...base,
+  ...ts,
+  ...react,
+  ...cssModules,
+  ...unicorn,
+]

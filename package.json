@@ -5,32 +5,31 @@
   "repository": "alex-e-leon/eslint-config",
   "author": "alex leon <alex@leon.st>",
   "license": "ISC",
+  "type": "module",
   "scripts": {
-    "test": "eslint -c node-flow.js && eslint -c node-ts.js && eslint -c react-flow.js && eslint -c react-ts.js"
+    "test": "eslint -c node-ts.js && eslint -c react-ts.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
-    "babel-eslint": "^10.0.1",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.18.0",
     "eslint-config-prettier": "^10.0.1",
-    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-config-xo": "^0.46.0",
+    "eslint-config-xo-react": "^0.27.0",
+    "eslint-config-xo-typescript": "^7.0.0",
     "eslint-plugin-css-modules": "^2.11.0",
-    "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-unicorn": "^56.0.1"
+    "eslint-plugin-unicorn": "^56.0.1",
+    "globals": "^15.14.0"
   },
   "peerDependencies": {
-    "eslint": "^8.38.0",
+    "eslint": "^9.18.0",
     "prettier": "^3.0.3"
   },
   "devDependencies": {
-    "eslint": "^8.38.0"
+    "eslint": "^9.18.0"
   }
 }

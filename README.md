@@ -2,25 +2,26 @@
 
 Personalised eslint-configs + prettier config for:
 
-- react projects with flow + css modules
 - react projects with ts + css modules
-- node.js projects with flow
 - node.js projects with typescript 
 
+Requires eslint 9 es modules (ie type:module is set in the package json) and uses the new flat file config
 
 ## Usage
 
 `npm i -D @alex-e-leon/eslint-config`
 
-.eslintrc
+.eslint.config.js
 ```js
-{ "extends": "@alex-e-leon/eslint-config/react-flow" }
+import eslintConfig from "@alex-e-leon/eslint-config/react-ts";
 \\ or
-{ "extends": "@alex-e-leon/eslint-config/react-ts" }
-\\ or
-{ "extends": "@alex-e-leon/eslint-config/node-flow" }
-\\ or
-{ "extends": "@alex-e-leon/eslint-config/node-ts" }
+import eslintConfig from "@alex-e-leon/eslint-config/node-ts";
+
+export default [
+...eslintConfig,
+// any local overrides
+]
+
 ```
 
 package.json
@@ -28,5 +29,4 @@ package.json
   "prettier": "@alex-e-leon/eslint-config/prettier.json"
 ```
 
-Note that you must install prettier and eslint seperately
-and either typescript/flow depending on which lint ruleset you choose.
+Note that you must install typescript, prettier and eslint seperately
