@@ -1,19 +1,15 @@
-import eslint from "@eslint/js";
 import importPlugin from 'eslint-plugin-import';
 import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
-  eslint.configs.recommended,
   importPlugin.flatConfigs.recommended,
   prettierPluginRecommended,
   {
     name: 'alex-eslint-base',
     rules: {
-      "no-plusplus": "off",
       "import/no-named-as-default-member": "off",
       "import/prefer-default-export": "off",
       "import/export": "off",
-      "no-continue": "off",
       "no-restricted-syntax": [
         "error",
         {
@@ -29,8 +25,5 @@ export default [
           "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
         }
       ],
-      "max-classes-per-file": "off",
-      "consistent-return": "off",
-      "no-param-reassign": "off",
     }
   }]

@@ -6,6 +6,5 @@ export default [
     name: 'alex-eslint-node',
     rules: {
       "no-console": "off",
-      "import/no-import-module-exports": "off"
     }
   }]
