@@ -1,9 +1,7 @@
 import importPlugin from 'eslint-plugin-import';
-import prettierPluginRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
   importPlugin.flatConfigs.recommended,
-  prettierPluginRecommended,
   {
     name: 'alex-eslint-base',
     rules: {
