@@ -102,15 +102,13 @@ export default [
         { blankLine: "always", prev: "multiline-block-like", next: "*" },
         { blankLine: "any", prev: "if", next: "*" },
       ],
-      'new-cap': [
-        2,
+      "new-cap": [
+        "error",
         {
           capIsNew: true,
-          capIsNewExceptions: [Array, Intl],
+          capIsNewExceptions: ["Intl"],
           newIsCap: true,
-          newIsCapExceptions: [],
-          properties: true
-        }
+        },
       ],
     },
   },
