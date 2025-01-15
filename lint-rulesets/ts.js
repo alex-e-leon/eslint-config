@@ -1,27 +1,31 @@
-module.exports = {
-  "parserOptions": {
-    "project": './tsconfig.json'
-  },
-  "rules": {
-    "import/extensions": ["error", "always", {
-      "js": "never",
-      "jsx": "never",
-      "ts": "never",
-      "tsx": "never"
-    }],
-    "import/no-duplicates": "off",
-    "@typescript-eslint/array-type": ["error", {"default": "array-simple"}],
-    "@typescript-eslint/object-curly-spacing": ["error", "never"],
-    "@typescript-eslint/lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-  },
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+/* eslint-disable import/no-anonymous-default-export */
+import importPlugin from "eslint-plugin-import";
+import {
+  typescriptExtensions,
+  allExtensions,
+  allPlusJsonExtensions,
+} from "./util.js";
+
+export default [
+  {
+    name: "alex-eslint-typescript",
+    files: [`**/*.{${typescriptExtensions.join(",")}}`],
+    extends: [importPlugin.flatConfigs.typescript],
+    settings: {
+      "import/extensions": allExtensions.map((ext) => `.${ext}`),
+      "import/resolver": {
+        typescript: { extensions: allExtensions.map((ext) => `.${ext}`) },
+        node: { extensions: allPlusJsonExtensions.map((ext) => `.${ext}`) },
+      },
+      "import/external-module-folders": ["node_modules", "node_modules/@types"],
+      "import/parsers": {
+        "@typescript-eslint/parser": typescriptExtensions.map(
+          (ext) => `.${ext}`,
+        ),
+      },
     },
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true
-      }
-    }
-  }
-}
+    rules: {
+      "@stylistic/indent": ["error", 2, { SwitchCase: 1 }],
+    },
+  },
+];
