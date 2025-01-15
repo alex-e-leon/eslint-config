@@ -25,7 +25,9 @@ export default [
       },
     },
     rules: {
+      // import xos typescript space file doesn't actually work, so we need to re-apply the indent rule
       "@stylistic/indent": ["error", 2, { SwitchCase: 1 }],
+
       // Not included in xo's typesript rules
       "no-implied-eval": [0],
       "@typescript-eslint/no-implied-eval": [2],
