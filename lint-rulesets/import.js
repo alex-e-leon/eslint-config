@@ -10,17 +10,11 @@ export default [
     plugins: {
       import: importPlugin,
     },
-    languageOptions: {
-      ecmaVersion: 2018,
-      sourceType: "module",
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
     settings: {
       "import/extensions": jsExtensions.map((ext) => `.${ext}`),
+      'import/resolver': {
+        node: { extensions: jsExtensions.map((ext) => `.${ext}`), },
+      },
     },
     rules: {
       "import/default": "error",
