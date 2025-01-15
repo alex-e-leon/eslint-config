@@ -106,7 +106,7 @@ export default [
         "error",
         {
           capIsNew: true,
-          capIsNewExceptions: ["Intl"],
+          capIsNewExceptionPattern: "^Intl\.",
           newIsCap: true,
         },
       ],
