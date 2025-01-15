@@ -4,8 +4,8 @@ import globals from "globals";
 import { allExtensions } from "./util.js";
 
 export default [
+  jsxA11yPlugin.flatConfigs.recommended,
   {
-    ...jsxA11yPlugin.flatConfigs.recommended,
     files: [`**/*.{${allExtensions.join(",")}}`],
     name: "alex-eslint-react",
     settings: {
@@ -18,10 +18,10 @@ export default [
     },
     rules: {
       "jsx-a11y/lang": "error",
+      "jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
       "react/button-has-type": "off",
       "react/display-name": "off",
       "react/jsx-filename-extension": [1, { extensions: [".tsx"] }],
-      "jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
 
       // From airbnbs old rules
       "class-methods-use-this": [
