@@ -95,6 +95,13 @@ export default [
         },
       ],
       "vars-on-top": "error",
+
+      // Overrides xo rules
+      "@stylistic/padding-line-between-statements": [
+        "error",
+        { blankLine: "always", prev: "multiline-block-like", next: "*" },
+        { blankLine: "any", prev: "if", next: "*" },
+      ],
     },
   },
 ];
