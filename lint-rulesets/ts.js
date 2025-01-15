@@ -1,4 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 import importPlugin from "eslint-plugin-import";
 import {
   typescriptExtensions,
@@ -24,6 +25,9 @@ export default [
           (ext) => `.${ext}`,
         ),
       },
+      "import/resolver-next": [
+        createTypeScriptImportResolver({ alwaysTryTypes: true }),
+      ],
     },
     rules: {
       // Import xos typescript space file doesn't actually work, so we need to re-apply the indent rule
