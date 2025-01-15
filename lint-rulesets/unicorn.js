@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import unicornPlugin from "eslint-plugin-unicorn";
 
 export default [

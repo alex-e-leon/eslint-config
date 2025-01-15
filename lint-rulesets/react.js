@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
 import globals from "globals";
 import { allExtensions } from "./util.js";

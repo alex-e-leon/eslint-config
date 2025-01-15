@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import importPlugin from "eslint-plugin-import";
 import { allExtensions } from "./util.js";
 

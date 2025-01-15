@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { fileURLToPath } from "url";
 import path from "path";
 import cssModulesPlugin from "eslint-plugin-css-modules";
