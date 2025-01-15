@@ -20,6 +20,7 @@ export default [
     },
     settings: {
       "import/extensions": allExtensions.map((ext) => `.${ext}`),
+      // "import/external-module-folders": ["node_modules", "node_modules/@types"],
     },
     rules: {
       "import/default": "error",
