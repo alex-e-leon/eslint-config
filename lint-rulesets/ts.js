@@ -41,6 +41,7 @@ export default [
       ],
 
       // Overwritten from xo
+      '@typescript-eslint/no-inferrable-types': ['error', { ignoreParameters: true, ignoreProperties: true}],
       "@typescript-eslint/no-restricted-types": [
         "error",
         {
