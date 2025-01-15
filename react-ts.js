@@ -1,16 +1,16 @@
-import prettierPluginRecommended from "eslint-plugin-prettier/recommended";
-import base from "./lint-rulesets/base.js";
-import tseslint from "typescript-eslint";
-import ts from './lint-rulesets/ts.js';
-import react from "./lint-rulesets/react.js";
-import importRules from "./lint-rulesets/import.js";
-import cssModules from "./lint-rulesets/css-modules.js";
-import unicorn from "./lint-rulesets/unicorn.js";
-import xoSpaceBrowser from "eslint-config-xo/space/browser";
-import xoTypeScript from 'eslint-config-xo-typescript';
-import { FlatCompat } from "@eslint/eslintrc";
-import { fileURLToPath } from "url";
 import path from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
+import xoSpaceBrowser from "eslint-config-xo/space/browser";
+import xoTypeScript from "eslint-config-xo-typescript";
+import prettierPluginRecommended from "eslint-plugin-prettier/recommended";
+import tseslint from "typescript-eslint";
+import base from "./lint-rulesets/base.js";
+import cssModules from "./lint-rulesets/css-modules.js";
+import importRules from "./lint-rulesets/import.js";
+import react from "./lint-rulesets/react.js";
+import ts from "./lint-rulesets/ts.js";
+import unicorn from "./lint-rulesets/unicorn.js";
 
 // Required to load old extend formats
 // see https://eslint.org/docs/latest/use/configure/migration-guide

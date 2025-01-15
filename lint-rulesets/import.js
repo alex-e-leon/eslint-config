@@ -12,8 +12,8 @@ export default [
     },
     settings: {
       "import/extensions": jsExtensions.map((ext) => `.${ext}`),
-      'import/resolver': {
-        node: { extensions: jsExtensions.map((ext) => `.${ext}`), },
+      "import/resolver": {
+        node: { extensions: jsExtensions.map((ext) => `.${ext}`) },
       },
     },
     rules: {

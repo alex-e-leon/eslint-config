@@ -1,8 +1,8 @@
 /* eslint-disable import/no-anonymous-default-export */
-import { fileURLToPath } from "url";
 import path from "path";
-import cssModulesPlugin from "eslint-plugin-css-modules";
+import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
+import cssModulesPlugin from "eslint-plugin-css-modules";
 
 // Required to load old extend formats
 // see https://eslint.org/docs/latest/use/configure/migration-guide
