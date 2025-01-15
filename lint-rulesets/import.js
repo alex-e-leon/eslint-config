@@ -25,7 +25,7 @@ export default [
       "import/namespace": ["error", { allowComputed: true }],
       "import/no-absolute-path": "error",
       "import/no-anonymous-default-export": "error",
-      'import/no-dynamic-require': "error",
+      "import/no-dynamic-require": "error",
       "import/no-named-default": "error",
       "import/no-webpack-loader-syntax": "error",
       "import/no-self-import": "error",

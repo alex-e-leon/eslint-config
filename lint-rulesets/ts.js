@@ -27,12 +27,15 @@ export default [
     rules: {
       "@stylistic/indent": ["error", 2, { SwitchCase: 1 }],
       // Not included in xo's typesript rules
-      'no-implied-eval': [0],
-      '@typescript-eslint/no-implied-eval': [2],
-      'no-shadow': [0],
-      '@typescript-eslint/no-shadow': [2],
-      'no-use-before-define': [0],
-      '@typescript-eslint/no-use-before-define': [2, { functions: true, classes: true, variables: true }],
+      "no-implied-eval": [0],
+      "@typescript-eslint/no-implied-eval": [2],
+      "no-shadow": [0],
+      "@typescript-eslint/no-shadow": [2],
+      "no-use-before-define": [0],
+      "@typescript-eslint/no-use-before-define": [
+        2,
+        { functions: true, classes: true, variables: true },
+      ],
     },
   },
 ];
