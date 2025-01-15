@@ -2,8 +2,6 @@
 import importPlugin from "eslint-plugin-import";
 import { jsExtensions, jsPlusJsonExtensions } from "./util.js";
 
-// Inspired by airbnb + xo. Would love to just extend of import plugin recommended,
-// but the recommended really doesnt add much
 export default [
   {
     name: "alex-eslint-import",
@@ -17,6 +15,8 @@ export default [
       },
     },
     rules: {
+      // Inspired by airbnb + xo. Would love to just extend of import plugin recommended,
+      // but the recommended really doesnt add much
       "import/default": "error",
       "import/export": "error",
       "import/extensions": ["error", "always", { ignorePackages: true }],
