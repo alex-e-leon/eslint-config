@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/filename-case */
 import xoSpace from "eslint-config-xo/space";
 import xoTypeScript from "eslint-config-xo-typescript";
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended";
