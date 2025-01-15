@@ -22,8 +22,8 @@ export default [
   ...base,
   ...importRules,
   ...ts,
+  ...unicorn,
   ...react,
   ...cssModules,
-  ...unicorn,
   prettierPluginRecommended,
 ];

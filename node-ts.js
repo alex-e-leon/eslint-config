@@ -11,7 +11,7 @@ export default [
   ...base,
   ...importRules,
   ...ts,
-  ...node,
   ...unicorn,
+  ...node,
   prettierPluginRecommended,
 ];

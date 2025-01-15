@@ -93,7 +93,9 @@ export default [
         },
       ],
       "react/prefer-exact-props": "error",
-      "no-console": "warn",
+      "react/state-in-constructor": ["error", "never"],
+      "no-console": ["error", { "allow": ["error"] }],
+      "unicorn/consistent-destructuring": "off",
     },
   },
 ];
