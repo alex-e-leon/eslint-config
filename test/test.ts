@@ -1,1 +1,1 @@
-const x:string = "test";
+const x = "test";

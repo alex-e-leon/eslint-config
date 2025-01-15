@@ -9,7 +9,7 @@
   "scripts": {
     "lint": "eslint -c node-ts.js",
     "lint:fix": "eslint -c node-ts.js --fix",
-    "test": "eslint -c node-ts.js test/test.ts && eslint -c react-ts.js"
+    "test": "eslint -c node-ts.js test/test.ts && eslint -c react-ts.js test/test.ts"
   },
   "dependencies": {
     "@eslint/eslintrc": "^3.2.0",
