@@ -6,6 +6,7 @@ export default [
   {
     name: "alex-eslint-unicorn",
     rules: {
+      'unicorn/better-regex': "error",
       "unicorn/consistent-destructuring": "off",
       "unicorn/explicit-length-check": "off",
       "unicorn/filename-case": [

@@ -95,6 +95,8 @@ export default [
       ],
       "react/prefer-exact-props": "error",
       "react/state-in-constructor": ["error", "never"],
+      'react/self-closing-comp': "error",
+      'react/require-render-return': "error",
       "no-console": ["error", { allow: ["error"] }],
       "unicorn/consistent-destructuring": "off",
     },
