@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import importPlugin from "eslint-plugin-import";
-import { allExtensions } from "./util.js";
+import { jsExtensions } from "./util.js";
 
 // Inspired by airbnb + xo. Would love to just extend of import plugin recommended,
 // but the recommended really doesnt add much
@@ -20,8 +20,7 @@ export default [
       },
     },
     settings: {
-      "import/extensions": allExtensions.map((ext) => `.${ext}`),
-      // "import/external-module-folders": ["node_modules", "node_modules/@types"],
+      "import/extensions": jsExtensions.map((ext) => `.${ext}`),
     },
     rules: {
       "import/default": "error",
