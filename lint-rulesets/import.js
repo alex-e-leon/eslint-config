@@ -55,9 +55,9 @@ export default [
           groups: ["builtin", "external", "parent", "sibling", "index"],
           "newlines-between": "never",
           warnOnUnassignedImports: true,
-          "alphabetize": {
-            "order": "asc"
-          }
+          alphabetize: {
+            order: "asc",
+          },
         },
       ],
       "import/no-unassigned-import": [

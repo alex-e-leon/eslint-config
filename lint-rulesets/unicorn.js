@@ -27,7 +27,6 @@ export default [
       "unicorn/no-null": "off",
       "unicorn/no-array-reduce": "off",
       "unicorn/no-useless-switch-case": "off",
-      "unicorn/consistent-destructuring": "off",
     },
   },
 ];

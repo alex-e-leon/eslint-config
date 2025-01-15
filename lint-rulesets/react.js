@@ -94,15 +94,15 @@ export default [
       ],
       "react/prefer-exact-props": "error",
       "react/state-in-constructor": ["error", "never"],
-      "no-console": ["error", { "allow": ["error"] }],
+      "no-console": ["error", { allow: ["error"] }],
       "unicorn/consistent-destructuring": "off",
     },
   },
   {
     name: "alex-eslint-react-stories",
-    "files": ["*stories.tsx"],
-    "rules": {
-      "react-hooks/rules-of-hooks": "off"
-    }
-  }
+    files: ["*stories.tsx"],
+    rules: {
+      "react-hooks/rules-of-hooks": "off",
+    },
+  },
 ];
