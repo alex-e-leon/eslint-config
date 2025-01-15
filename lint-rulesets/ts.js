@@ -1,6 +1,10 @@
 /* eslint-disable import/no-anonymous-default-export */
 import importPlugin from "eslint-plugin-import";
-import { typescriptExtensions, allExtensions } from "./util.js";
+import {
+  typescriptExtensions,
+  allExtensions,
+  allPlusJsonExtensions,
+} from "./util.js";
 
 export default [
   {
@@ -11,7 +15,7 @@ export default [
       "import/extensions": allExtensions.map((ext) => `.${ext}`),
       "import/resolver": {
         typescript: { extensions: allExtensions.map((ext) => `.${ext}`) },
-        node: { extensions: allExtensions.map((ext) => `.${ext}`) },
+        node: { extensions: allPlusJsonExtensions.map((ext) => `.${ext}`) },
       },
       "import/external-module-folders": ["node_modules", "node_modules/@types"],
       "import/parsers": {

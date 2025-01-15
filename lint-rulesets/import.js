@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import importPlugin from "eslint-plugin-import";
-import { jsExtensions } from "./util.js";
+import { jsExtensions, jsPlusJsonExtensions } from "./util.js";
 
 // Inspired by airbnb + xo. Would love to just extend of import plugin recommended,
 // but the recommended really doesnt add much
@@ -13,7 +13,7 @@ export default [
     settings: {
       "import/extensions": jsExtensions.map((ext) => `.${ext}`),
       "import/resolver": {
-        node: { extensions: jsExtensions.map((ext) => `.${ext}`) },
+        node: { extensions: jsPlusJsonExtensions.map((ext) => `.${ext}`) },
       },
     },
     rules: {
