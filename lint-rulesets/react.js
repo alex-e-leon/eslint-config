@@ -1,4 +1,5 @@
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y";
+import globals from "globals";
 import { allExtensions } from "./util.js";
 
 export default [
@@ -10,6 +11,9 @@ export default [
       react: {
         version: "detect",
       },
+    },
+    languageOptions: {
+      globals: { ...globals.browser, ...globals.es2023 },
     },
     rules: {
       "jsx-a11y/lang": "error",

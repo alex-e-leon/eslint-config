@@ -1,13 +1,9 @@
 import unicornPlugin from "eslint-plugin-unicorn";
-import globals from "globals";
 
 export default [
   unicornPlugin.configs["flat/recommended"],
   {
     name: "alex-eslint-unicorn",
-    languageOptions: {
-      globals: globals.builtin,
-    },
     rules: {
       "unicorn/consistent-destructuring": "off",
       "unicorn/explicit-length-check": "off",
