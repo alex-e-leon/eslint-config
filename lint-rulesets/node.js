@@ -9,7 +9,7 @@ export default [
     },
     rules: {
       "global-require": "error",
-      "no-console": ["error", { "allow": ["warn", "error", "info", "dir"] }],
+      "no-console": ["error", { allow: ["warn", "error", "info", "dir"] }],
       "no-new-require": "error",
       "no-path-concat": "error",
     },
