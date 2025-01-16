@@ -98,6 +98,7 @@ export default [
       "react/state-in-constructor": ["error", "never"],
       "react/self-closing-comp": "error",
       "react/require-render-return": "error",
+      'react/boolean-prop-naming': 'off',
 
       // Overwrite for xos rules
       "unicorn/consistent-destructuring": "off",
