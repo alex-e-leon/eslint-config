@@ -97,6 +97,11 @@ export default [
       "vars-on-top": "error",
 
       // Overrides xo rules
+      "object-shorthand": [
+        "error",
+        "always",
+        { avoidExplicitReturnArrows: false },
+      ],
       "@stylistic/padding-line-between-statements": [
         "error",
         { blankLine: "always", prev: "multiline-block-like", next: "*" },
