@@ -45,6 +45,7 @@ export default [
       ],
 
       // Overwritten from xo
+      "@typescript-eslint/default-param-last": "off",
       "@typescript-eslint/no-empty-function": [
         "error",
         { allow: ["private-constructors"] },

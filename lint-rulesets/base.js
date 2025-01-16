@@ -47,7 +47,6 @@ export default [
       "prefer-template": "error",
       "class-methods-use-this": ["error", { exceptMethods: [] }],
       curly: ["error", "multi-line"], // Multiline
-      "default-param-last": "error",
       "no-loop-func": "error",
       "no-param-reassign": "off",
       "no-restricted-syntax": [
@@ -99,8 +98,7 @@ export default [
       ],
       "no-implicit-coercion": ["error", { boolean: false }],
       // Would like to use logical assignment operators, but I find them currently still a little too hard to reason about
-      'logical-assignment-operators': 'off',
-      'default-param-last': 'off',
+      "logical-assignment-operators": "off",
     },
   },
 ];
