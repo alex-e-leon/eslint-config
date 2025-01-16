@@ -22,6 +22,7 @@ export default [
       "react/button-has-type": "off",
       "react/display-name": "off",
       "react/jsx-filename-extension": [1, { extensions: [".tsx"] }],
+      "no-console": ["error", { allow: ["error"] }],
 
       // From airbnbs old rules
       "class-methods-use-this": [
@@ -97,8 +98,10 @@ export default [
       "react/state-in-constructor": ["error", "never"],
       "react/self-closing-comp": "error",
       "react/require-render-return": "error",
-      "no-console": ["error", { allow: ["error"] }],
+
+      // overwrite for xos rules
       "unicorn/consistent-destructuring": "off",
+      'react/require-default-props': 'off',
     },
   },
 ];
