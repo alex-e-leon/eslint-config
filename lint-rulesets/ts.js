@@ -72,13 +72,19 @@ export default [
           },
         },
       ],
-      ...getNamingConventionRule({ isTsx: false }),
+      ...getNamingConventionRule({ isTsx: false, isTest: false }),
     },
   },
   {
     files: ["**/*.tsx"],
     rules: {
-      ...getNamingConventionRule({ isTsx: true }),
+      ...getNamingConventionRule({ isTsx: true, isTest: false }),
+    },
+  },
+  {
+    files: [`**/*.{spec,integrationTest,test}.{${allExtensions.join(",")}}`],
+    rules: {
+      ...getNamingConventionRule({ isTsx: false, isTest: true }),
     },
   },
 ];

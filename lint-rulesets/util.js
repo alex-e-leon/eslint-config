@@ -7,7 +7,7 @@ export const jsPlusJsonExtensions = [...jsExtensions, "json"];
 
 // Pulled from https://github.com/xojs/eslint-config-xo-typescript/blob/main/index.js
 // and adjusted to use non-strict names
-export const getNamingConventionRule = ({ isTsx }) => {
+export const getNamingConventionRule = ({ isTsx, isTest }) => {
   return {
     "@typescript-eslint/naming-convention": [
       "error",
@@ -32,7 +32,7 @@ export const getNamingConventionRule = ({ isTsx }) => {
         leadingUnderscore: "allowSingleOrDouble",
         trailingUnderscore: "allow",
         // Ignore `{'Retry-After': retryAfter}` type properties.
-        filter: { regex: "[- ]", match: false },
+        filter: { regex: isTest ? "^[A-Za-z0-9-]*$" : "[- ]", match: false },
       },
       {
         selector: "typeLike",
