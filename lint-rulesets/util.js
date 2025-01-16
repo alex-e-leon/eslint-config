@@ -8,28 +8,22 @@ export const jsPlusJsonExtensions = [...jsExtensions, "json"];
 // Pulled from https://github.com/xojs/eslint-config-xo-typescript/blob/main/index.js
 // and adjusted to use non-strict names
 export const getNamingConventionRule = ({ isTsx }) => {
-  // ideally we would like to introduce a naming convention for non-tsx files,
-  // but there are too many errors currently
-  if (!isTsx) return { "@typescript-eslint/naming-convention": "off" };
-
   return {
     "@typescript-eslint/naming-convention": [
       "error",
       {
         selector: [
-          "function",
           "classProperty",
-          "parameterProperty",
           "classMethod",
           "typeMethod",
           "accessor",
+          "parameterProperty",
         ],
         format: ["camelCase", isTsx && "PascalCase"].filter(Boolean),
-        // We allow double underscore because of GraphQL type names and some React names.
-        leadingUnderscore: "allowSingleOrDouble",
-        trailingUnderscore: "allow",
-        // Ignore `{'Retry-After': retryAfter}` type properties.
-        filter: { regex: "[- ]", match: false },
+      },
+      {
+        selector: ["function"],
+        format: ["camelCase", "PascalCase"],
       },
       {
         selector: [
@@ -37,7 +31,7 @@ export const getNamingConventionRule = ({ isTsx }) => {
           "objectLiteralMethod",
           "variable",
         ],
-        format: ["camelCase", isTsx && "PascalCase", "UPPER_CASE"].filter(Boolean),
+        format: ["camelCase", "PascalCase", "UPPER_CASE"].filter(Boolean),
         // We allow double underscore because of GraphQL type names and some React names.
         leadingUnderscore: "allowSingleOrDouble",
         trailingUnderscore: "allow",
