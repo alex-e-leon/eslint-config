@@ -71,6 +71,7 @@ export default [
       "vars-on-top": "error",
 
       // Overrides xo rules
+      'capitalized-comments': 'off',
       "max-params": "off",
       "max-depth": "off",
       "max-nested-callbacks": "off",
