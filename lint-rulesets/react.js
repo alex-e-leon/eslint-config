@@ -103,7 +103,7 @@ export default [
       // Overwrite for xos rules
       "unicorn/consistent-destructuring": "off",
       "react/require-default-props": "off",
-      'react/prefer-read-only-props': 'off',
+      "react/prefer-read-only-props": "off",
     },
   },
 ];
