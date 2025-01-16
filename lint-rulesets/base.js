@@ -46,7 +46,6 @@ export default [
       ],
       "prefer-template": "error",
       "class-methods-use-this": ["error", { exceptMethods: [] }],
-      "consistent-return": "error",
       curly: ["error", "multi-line"], // Multiline
       "default-param-last": "error",
       "no-loop-func": "error",
