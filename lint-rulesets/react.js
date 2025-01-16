@@ -101,11 +101,4 @@ export default [
       "unicorn/consistent-destructuring": "off",
     },
   },
-  {
-    name: "alex-eslint-react-stories",
-    files: ["*stories.tsx"],
-    rules: {
-      "react-hooks/rules-of-hooks": "off",
-    },
-  },
 ];
