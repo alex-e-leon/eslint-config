@@ -49,6 +49,14 @@ export default [
         "error",
         { allow: ["private-constructors"] },
       ],
+      '@typescript-eslint/switch-exhaustiveness-check': [
+        'error',
+        {
+          allowDefaultCaseForExhaustiveSwitch: false,
+          considerDefaultExhaustiveForUnions: true,
+          requireDefaultForNonUnion: true
+        }
+      ],
       "@typescript-eslint/no-inferrable-types": [
         "error",
         { ignoreParameters: true, ignoreProperties: true },
