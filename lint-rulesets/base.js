@@ -10,7 +10,6 @@ export default [
         { functions: true, classes: true, variables: true },
       ],
       "brace-style": ["error", "1tbs", { allowSingleLine: true }],
-      camelcase: ["error", { properties: "never", ignoreDestructuring: false }],
       "@stylistic/function-paren-newline": ["error", "multiline-arguments"],
       "implicit-arrow-linebreak": ["error", "beside"],
       "no-tabs": "error",
@@ -51,25 +50,7 @@ export default [
       curly: ["error", "multi-line"], // Multiline
       "default-param-last": "error",
       "no-loop-func": "error",
-      "no-param-reassign": [
-        "error",
-        {
-          props: true,
-          ignorePropertyModificationsFor: [
-            "acc", // For reduce accumulators
-            "accumulator", // For reduce accumulators
-            "e", // For e.returnvalue
-            "ctx", // For Koa routing
-            "context", // For Koa routing
-            "req", // For Express requests
-            "request", // For Express requests
-            "res", // For Express responses
-            "response", // For Express responses
-            "$scope", // For Angular 1 scopes
-            "staticContext", // For ReactRouter context
-          ],
-        },
-      ],
+      "no-param-reassign": "off",
       "no-restricted-syntax": [
         "error",
         {
