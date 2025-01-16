@@ -29,6 +29,8 @@ export default [
       "unicorn/no-null": "off",
       "unicorn/no-array-reduce": "off",
       "unicorn/no-useless-switch-case": "off",
+      // un-needed as provided by import/no-anonymous-default-export
+      "unicorn/no-anonymous-default-export": "off",
     },
   },
 ];
