@@ -21,7 +21,7 @@ export default [
       "import/extensions": ["error", "always", { ignorePackages: true }],
       "import/first": "error",
       "import/no-absolute-path": "error",
-      "import/no-anonymous-default-export": ["error", { "allowObject": true }],
+      "import/no-anonymous-default-export": ["error", { allowObject: true }],
       "import/no-dynamic-require": "error",
       "import/no-named-default": "error",
       "import/no-webpack-loader-syntax": "error",

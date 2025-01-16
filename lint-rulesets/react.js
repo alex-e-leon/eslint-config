@@ -99,9 +99,9 @@ export default [
       "react/self-closing-comp": "error",
       "react/require-render-return": "error",
 
-      // overwrite for xos rules
+      // Overwrite for xos rules
       "unicorn/consistent-destructuring": "off",
-      'react/require-default-props': 'off',
+      "react/require-default-props": "off",
     },
   },
 ];

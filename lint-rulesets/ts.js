@@ -45,6 +45,10 @@ export default [
       ],
 
       // Overwritten from xo
+      "@typescript-eslint/no-empty-function": [
+        "error",
+        { allow: ["private-constructors"] },
+      ],
       "@typescript-eslint/no-inferrable-types": [
         "error",
         { ignoreParameters: true, ignoreProperties: true },
