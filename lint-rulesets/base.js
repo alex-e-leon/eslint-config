@@ -111,6 +111,8 @@ export default [
         "error",
         {
           capIsNew: true,
+          // Its a string pretending to be a regex
+          // eslint-disable-next-line no-useless-escape
           capIsNewExceptionPattern: "^Intl\.",
           newIsCap: true,
         },
