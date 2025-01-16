@@ -72,6 +72,10 @@ export default [
       "vars-on-top": "error",
 
       // Overrides xo rules
+      "max-params": "off",
+      "max-depth": "off",
+      "max-nested-callbacks": "off",
+      complexity: "off",
       "object-shorthand": [
         "error",
         "always",

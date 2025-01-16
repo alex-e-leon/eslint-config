@@ -49,13 +49,13 @@ export default [
         "error",
         { allow: ["private-constructors"] },
       ],
-      '@typescript-eslint/switch-exhaustiveness-check': [
-        'error',
+      "@typescript-eslint/switch-exhaustiveness-check": [
+        "error",
         {
           allowDefaultCaseForExhaustiveSwitch: false,
           considerDefaultExhaustiveForUnions: true,
-          requireDefaultForNonUnion: true
-        }
+          requireDefaultForNonUnion: true,
+        },
       ],
       "@typescript-eslint/no-inferrable-types": [
         "error",

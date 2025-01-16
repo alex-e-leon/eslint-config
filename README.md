@@ -4,6 +4,7 @@ Personalised eslint-configs + prettier config for:
 
 - react projects with ts + css modules
 - node.js projects with typescript 
+- a bonus config that shows suggestions for areas of the code to refactor or simplify
 
 Requires eslint 9 es modules (ie type:module is set in the package json) and uses the new flat file config
 
