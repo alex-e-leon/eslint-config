@@ -27,11 +27,11 @@ export const getNamingConventionRule = ({ isTsx, isTest }) => {
       },
       {
         selector: ["objectLiteralProperty", "objectLiteralMethod", "variable"],
-        format: ["camelCase", "PascalCase", "UPPER_CASE"].filter(Boolean),
+        format: ["camelCase", "PascalCase", "UPPER_CASE"],
         // We allow double underscore because of GraphQL type names and some React names.
         leadingUnderscore: "allowSingleOrDouble",
         trailingUnderscore: "allow",
-        // Ignore `{'Retry-After': retryAfter}` type properties.
+        // Ignore `{'Retry-After': retryAfter}` type properties, or if test files, id like propreties 12sa21fa etc
         filter: { regex: isTest ? "^[A-Za-z0-9-]*$" : "[- ]", match: false },
       },
       {
@@ -61,6 +61,12 @@ export const getNamingConventionRule = ({ isTsx, isTest }) => {
         selector: ["classProperty", "objectLiteralProperty"],
         format: null,
         modifiers: ["requiresQuotes"],
+      },
+      // Filter seems to run afterwards, so we need to explicitly also allow quoted that match a filter
+      {
+        selector: ["objectLiteralProperty", "objectLiteralMethod"],
+        format: null,
+        filter: { regex: isTest ? "^[A-Za-z0-9-]*$" : "[- ]", match: false },
       },
     ],
   };
