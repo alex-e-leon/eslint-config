@@ -89,6 +89,7 @@ export default [
     files: [`**/*.{spec,integrationTest,test}.{${allExtensions.join(",")}}`],
     rules: {
       ...getNamingConventionRule({ isTsx: false, isTest: true }),
+      "@typescript-eslint/no-empty-function": "off",
     },
   },
 ];
