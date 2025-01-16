@@ -50,12 +50,6 @@ export default [
       "consistent-return": "error",
       curly: ["error", "multi-line"], // Multiline
       "default-param-last": "error",
-      "no-empty-function": [
-        "error",
-        {
-          allow: ["arrowFunctions", "functions", "methods"],
-        },
-      ],
       "no-loop-func": "error",
       "no-param-reassign": [
         "error",
