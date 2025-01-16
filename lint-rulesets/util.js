@@ -26,11 +26,7 @@ export const getNamingConventionRule = ({ isTsx }) => {
         format: ["camelCase", "PascalCase"],
       },
       {
-        selector: [
-          "objectLiteralProperty",
-          "objectLiteralMethod",
-          "variable",
-        ],
+        selector: ["objectLiteralProperty", "objectLiteralMethod", "variable"],
         format: ["camelCase", "PascalCase", "UPPER_CASE"].filter(Boolean),
         // We allow double underscore because of GraphQL type names and some React names.
         leadingUnderscore: "allowSingleOrDouble",
@@ -67,5 +63,5 @@ export const getNamingConventionRule = ({ isTsx }) => {
         modifiers: ["requiresQuotes"],
       },
     ],
-  }
+  };
 };
