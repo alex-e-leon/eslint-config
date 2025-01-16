@@ -75,6 +75,7 @@ export default [
       "max-params": "off",
       "max-depth": "off",
       "max-nested-callbacks": "off",
+      'no-warning-comments': 'off',
       complexity: "off",
       "object-shorthand": [
         "error",
