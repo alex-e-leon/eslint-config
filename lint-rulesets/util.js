@@ -67,6 +67,7 @@ export const getNamingConventionRule = ({ isTsx, isTest }) => {
         selector: ["objectLiteralProperty", "objectLiteralMethod"],
         format: null,
         filter: { regex: isTest ? "^[A-Za-z0-9-]*$" : "[- ]", match: false },
+        modifiers: ["requiresQuotes"],
       },
     ],
   };
