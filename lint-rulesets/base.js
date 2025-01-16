@@ -100,6 +100,7 @@ export default [
       "no-implicit-coercion": ["error", { boolean: false }],
       // Would like to use logical assignment operators, but I find them currently still a little too hard to reason about
       'logical-assignment-operators': 'off',
+      'default-param-last': 'off',
     },
   },
 ];
