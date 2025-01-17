@@ -105,4 +105,13 @@ export default [
       "react/prefer-read-only-props": "off",
     },
   },
+  {
+    files: ["**/stories.tsx", "**/*.stories.tsx"],
+    rules: {
+      "react-hooks/rules-of-hooks": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "no-console": "off",
+      "react/jsx-props-no-spreading": "off",
+    },
+  },
 ];
