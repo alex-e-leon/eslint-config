@@ -99,6 +99,7 @@ export default [
     rules: {
       ...getNamingConventionRule({ isTsx: false, isTest: true }),
       "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/consistent-type-assertions": "off",
     },
   },
 ];
