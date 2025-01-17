@@ -112,6 +112,13 @@ export default [
       "@typescript-eslint/no-empty-function": "off",
       "no-console": "off",
       "react/jsx-props-no-spreading": "off",
+      "no-alert": "off",
+    },
+  },
+  {
+    files: [`**/*.{spec,integrationTest,test}.{${allExtensions.join(",")}}`],
+    rules: {
+      "react/jsx-props-no-spreading": "off",
     },
   },
 ];
