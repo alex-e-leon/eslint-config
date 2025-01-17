@@ -18,7 +18,7 @@ export default [
     },
     rules: {
       "jsx-a11y/lang": "error",
-      "jsx-a11y/no-autofocus": ["error", { ignoreNonDOM: true }],
+      "jsx-a11y/no-autofocus": "off",
       "react/button-has-type": "off",
       "react/display-name": "off",
       "react/jsx-filename-extension": [1, { extensions: [".tsx"] }],
