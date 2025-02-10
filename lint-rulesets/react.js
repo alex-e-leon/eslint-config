@@ -106,6 +106,8 @@ export default [
       // We may want to turn this on eventually, but waiting to see if react-compiler handles this instead,
       // as this otherwise makes code a little more frustrating to read.
       "react/no-object-type-as-default-prop": "off",
+      // Not really useful with typescript
+      "react/jsx-no-leaked-render": "off",
     },
   },
   {
