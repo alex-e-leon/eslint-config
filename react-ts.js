@@ -1,8 +1,6 @@
 /* eslint-disable unicorn/filename-case, import/no-unresolved */
-import path from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
 import xoSpaceBrowser from "eslint-config-xo/space/browser";
+import xoReact from "eslint-config-xo-react";
 import xoTypeScript from "eslint-config-xo-typescript";
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended";
 import tseslint from "typescript-eslint";
@@ -14,12 +12,6 @@ import ts from "./lint-rulesets/ts.js";
 import unicorn from "./lint-rulesets/unicorn.js";
 import { typescriptExtensions } from "./lint-rulesets/util.js";
 
-// Required to load old extend formats
-// see https://eslint.org/docs/latest/use/configure/migration-guide
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({ baseDirectory: __dirname });
-
 // See https://github.com/xojs/eslint-config-xo-typescript/issues/88
 xoTypeScript[1].files = [`**/*.{${typescriptExtensions.join(",")}}`];
 
@@ -27,7 +19,7 @@ xoTypeScript[1].files = [`**/*.{${typescriptExtensions.join(",")}}`];
 export default tseslint.config(
   ...xoSpaceBrowser,
   ...xoTypeScript,
-  ...compat.extends("xo-react/space"),
+  ...xoReact,
   ...base,
   ...unicorn,
   ...importRules,

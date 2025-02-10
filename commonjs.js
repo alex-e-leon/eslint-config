@@ -5,11 +5,11 @@ import globals from "globals";
 // as you usually want to include this last to overwrite the commonjs settings
 export default [
   {
-    files: ['**/*.cjs'],
+    files: ["**/*.cjs"],
     name: "alex-eslint-commonjs",
     languageOptions: {
-      sourceType: 'commonjs',
-      globals: {...globals.node, ...globals.nodeBuiltin, ...globals.es2023},
+      sourceType: "commonjs",
+      globals: { ...globals.node, ...globals.nodeBuiltin, ...globals.es2023 },
     },
   },
 ];
