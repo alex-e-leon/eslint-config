@@ -103,6 +103,9 @@ export default [
       // Overwrite for xos rules
       "react/require-default-props": "off",
       "react/prefer-read-only-props": "off",
+      // We may want to turn this on eventually, but waiting to see if react-compiler handles this instead,
+      // as this otherwise makes code a little more frustrating to read.
+      "react/no-object-type-as-default-prop": "off",
     },
   },
   {
