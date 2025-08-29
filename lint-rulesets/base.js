@@ -46,6 +46,16 @@ export default [
       ],
       "prefer-template": "error",
       "class-methods-use-this": ["error", { exceptMethods: [] }],
+      '@stylistic/curly-newline': [
+        'error',
+        {
+          consistent: true,
+          ForInStatement: 'always',
+          ForOfStatement: 'always',
+          ForStatement: 'always',
+          WhileStatement: { multiline: true, minElements: 3, consistent: true },
+        },
+      ],
       curly: ["error", "multi-line"], // Multiline
       "no-loop-func": "error",
       "no-param-reassign": "off",
