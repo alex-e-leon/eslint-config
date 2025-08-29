@@ -108,7 +108,7 @@ export default [
       "react/no-object-type-as-default-prop": "off",
       // Not really useful with typescript
       "react/jsx-no-leaked-render": "off",
-      'react/jsx-no-target-blank': 'off', // no longer relevant
+      "react/jsx-no-target-blank": "off", // no longer relevant
     },
   },
   {
