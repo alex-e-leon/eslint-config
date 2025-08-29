@@ -89,7 +89,7 @@ export default [
     },
   },
   {
-    files: ["**/*.tsx"],
+    files: ["**/*.{tsx,mtsx}"],
     rules: {
       ...getNamingConventionRule({ isTsx: true, isTest: false }),
     },
