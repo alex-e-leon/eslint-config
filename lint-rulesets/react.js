@@ -9,9 +9,7 @@ export default [
     files: [`**/*.{${allExtensions.join(",")}}`],
     name: "alex-eslint-react",
     settings: {
-      react: {
-        version: "detect",
-      },
+      react: { version: "detect" },
     },
     languageOptions: {
       globals: { ...globals.browser, ...globals.es2023 },

@@ -21,7 +21,7 @@ export default resolveFlatConfig(
   tseslint.config(
     ...xoSpaceBrowser,
     ...xoTypeScript,
-    ...xoReact,
+    ...xoReact({ space: true }),
     ...base,
     ...unicorn,
     ...importRules,
