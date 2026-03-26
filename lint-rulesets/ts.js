@@ -30,6 +30,8 @@ export default [
       ],
     },
     rules: {
+      // Nice in theory, but breaks in too many edge cases
+      '@typescript-eslint/no-unnecessary-type-arguments': 'off',
       // Import xos typescript space file doesn't actually work, so we need to re-apply the indent rule
       "@stylistic/indent": ["error", 2, { SwitchCase: 1 }],
 
